@@ -12,6 +12,7 @@ public class Book {
         this.authorLastName=authorLastName;
 
 
+
         //Как сделать метод доступными из нескольких классов?
         //+не понятно почему я из класса book не могу вызвать поле author1.authorLastName? там же public стоит
 

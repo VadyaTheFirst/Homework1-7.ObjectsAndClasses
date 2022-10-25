@@ -10,5 +10,15 @@ public class Main {
         book1.setPublishingYear(1966);
         System.out.println(book1.getPublishYear());
 
+        Author author2=new Author("Edgar Allan", "Poe");
+        Book book2 = new Book(1989, "The murder on the Morgue Street",author2.authorFirstName,author2.authorLastName);
+        System.out.println(book2.getBookName());
+        System.out.println(book2.getPublishYear());
+        System.out.println(author2.getAuthorFirstName());
+        System.out.println(author2.getAuthorLastName());
+        book1.setPublishingYear(2021);
+        System.out.println(book2.getPublishYear());
+
+
     }
 }
