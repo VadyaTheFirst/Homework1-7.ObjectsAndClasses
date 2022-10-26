@@ -18,7 +18,7 @@ public class Main {
         System.out.println(author2.getAuthorFirstName());
         System.out.println(author2.getAuthorLastName());
         System.out.println(book2);
-        book1.setPublishingYear(1966);
+        book2.setPublishingYear(1976);
         System.out.println(book2.getPublishYear());
 
 
