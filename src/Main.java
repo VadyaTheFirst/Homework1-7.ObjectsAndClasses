@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
         Author author1=new Author("Howard", "Lovecraft");
-        Book book1 = new Book(1996, "Call of Ctulhu",author1.authorFirstName,author1.authorLastName);
+        Book book1 = new Book(1996, "Call of Ctulhu",author1);
         System.out.println(book1.getBookName());
         System.out.println(book1.getPublishYear());
         System.out.println(author1.getAuthorFirstName());
@@ -11,9 +11,10 @@ public class Main {
         System.out.println(book1.getPublishYear());
 
         Author author2=new Author("Edgar Allan", "Poe");
-        Book book2 = new Book(1989, "The murder on the Morgue Street",author2.authorFirstName,author2.authorLastName);
+        Book book2 = new Book(1989, "The murder on the Morgue Street",author2);
         System.out.println(book2.getBookName());
         System.out.println(book2.getPublishYear());
+        System.out.println(book2.getAuthorFirstName());
         System.out.println(author2.getAuthorFirstName());
         System.out.println(author2.getAuthorLastName());
         book1.setPublishingYear(2021);
