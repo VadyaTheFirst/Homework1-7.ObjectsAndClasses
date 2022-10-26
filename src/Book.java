@@ -33,7 +33,7 @@ public class Book {
 
    // public String getAuthorLastName() {
         //return author.authorLastName;
-   // }
+   // Они стали private}
     @Override
     public String toString(){
         return this.bookName+" "+this.publishYear+" "+this.author.toString();
