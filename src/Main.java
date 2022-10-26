@@ -7,6 +7,7 @@ public class Main {
         System.out.println(book1.getPublishYear());
         System.out.println(author1.getAuthorFirstName());
         System.out.println(author1.getAuthorLastName());
+        System.out.println(book1);
         book1.setPublishingYear(1966);
         System.out.println(book1.getPublishYear());
 
@@ -14,10 +15,10 @@ public class Main {
         Book book2 = new Book(1989, "The murder on the Morgue Street",author2);
         System.out.println(book2.getBookName());
         System.out.println(book2.getPublishYear());
-        System.out.println(book2.getAuthorFirstName());
         System.out.println(author2.getAuthorFirstName());
         System.out.println(author2.getAuthorLastName());
-        book1.setPublishingYear(2021);
+        System.out.println(book2);
+        book1.setPublishingYear(1966);
         System.out.println(book2.getPublishYear());
 
 

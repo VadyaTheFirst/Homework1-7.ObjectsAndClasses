@@ -1,7 +1,7 @@
 public class Book {
     int publishYear;
-    String bookName;
-    Author author;
+   private final   String bookName;
+    private final Author author;
 
 
 
@@ -10,12 +10,6 @@ public class Book {
         this.publishYear = publishYear;
         this.bookName = bookName;
         this.author=author;
-
-
-
-        //Как сделать метод доступными из нескольких классов?
-        //+не понятно почему я из класса book не могу вызвать поле author1.authorLastName? там же public стоит
-
     }
 
 
@@ -32,13 +26,20 @@ public class Book {
         this.publishYear = publishYear;
     }
 
-    public String getAuthorFirstName() {
-        return author.authorFirstName;
+   //public String getAuthorFirstName() {
+     //  return author.authorFirstName;
+    //
+    // Они стали private}
+
+   // public String getAuthorLastName() {
+        //return author.authorLastName;
+   // }
+    @Override
+    public String toString(){
+        return this.bookName+" "+this.publishYear+" "+this.author.toString();
     }
 
-    public String getAuthorLastName() {
-        return author.authorLastName;
-    }
+
 
 
 
