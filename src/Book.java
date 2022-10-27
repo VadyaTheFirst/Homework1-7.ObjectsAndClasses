@@ -26,14 +26,7 @@ public class Book {
         this.publishYear = publishYear;
     }
 
-   //public String getAuthorFirstName() {
-     //  return author.authorFirstName;
-    //
-    // Они стали private}
 
-   // public String getAuthorLastName() {
-        //return author.authorLastName;
-   // Они стали private}
     @Override
     public String toString(){
         return this.bookName+" "+this.publishYear+" "+this.author.toString();
